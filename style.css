@@ -1,0 +1,211 @@
+/**
+Theme Name: astra-ceserpi
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-ceserpi
+Template: astra
+*/
+/*----------------------------------------------------------------------------*/
+/* GENERAL*/
+/*----------------------------------------------------------------------------*/
+.has-x-large-font-size,
+.has-large-font-size,
+.has-medium-font-size,
+.has-huge-font-size,
+[style*="font-size:30px"],
+[style*="font-size:45px"],
+[style*="font-size:57px"],
+[style*="font-size:60px"],
+[style*="font-size:36px"]  {
+    line-height: 1.1;
+}
+/*----------------------------------------------------------------------------*/
+/* HEADER*/
+/*----------------------------------------------------------------------------*/
+.site-header  {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
+#menu-item-84 {
+    padding: 0px 15px;
+    background-color: var(--ast-global-color-0);
+}
+#menu-item-84 a {
+    color: white;
+    display: inline-block;
+}
+
+.ast-desktop .ast-primary-header-bar .main-header-menu > .menu-item {
+    line-height: 50px;
+}
+
+.main-navigation #ast-hf-menu-1 .sub-menu {
+    background: var(--ast-global-color-0) !important;
+}
+.main-navigation #ast-hf-menu-1 .sub-menu a{
+    color: white !important;
+}
+@media (max-width: 768px){
+    #texto-cabecera h1{
+        font-size:28px !important;
+    }
+}
+/*----------------------------------------------------------------------------*/
+/* FOOTER */
+/*----------------------------------------------------------------------------*/
+#menu-footer-menu-2{
+    display: flex !important;
+    justify-content: center;
+    padding: 0;
+    gap: 20px;
+    margin: 0;
+}
+
+#menu-footer-menu-2 a{
+    color:black !important;
+}
+@media (max-width: 768px){
+    .site-primary-footer-wrap{
+        padding: 20px;
+    }
+    .site-below-footer-wrap{
+        padding: 20px;
+    }
+}
+/*----------------------------------------------------------------------------*/
+/* Pagina PRINCIPAL */
+/*----------------------------------------------------------------------------*/
+#texto-cabecera{
+    margin-top: -100px !important;
+    width: 80%;
+}
+
+.card-pagina-principal figure.wp-block-image:last-of-type {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0; /* Remueve cualquier margen extra */
+}
+.card-pagina-principal figure.wp-block-image:last-of-type img {
+    margin: 0 auto; /* Centra la imagen */
+}
+.card-pagina-principal a{
+    color: black;
+    text-decoration: none !important;
+}
+.card-pagina-principal{
+    position: relative;
+    width: 400px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px;
+}
+.card-pagina-principal:hover {
+    transform: translateY(-5px); /* Mover hacia arriba al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+    
+.enlace-pagina-principal a{
+    text-decoration: none !important;
+}
+
+.enlace-pagina-principal a:hover{
+    color: black;
+}
+
+#boton-conseguimos a{
+    border-color: white !important;
+}
+
+#boton-conseguimos a:hover{
+    background-color: white !important;
+    color: black !important;
+}
+
+#enlaces-columna-principal a{
+    text-decoration: none !important;
+}
+
+.grupo-enlaces-pagina-principal p{
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
+.grupo-enlaces-pagina-principal hr{
+    margin: 0 !important;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Pagina Manipulados Industriales */
+/*----------------------------------------------------------------------------*/
+.card-servicios{
+    position: relative;
+    width: 400px;
+    border: 1px solid #b6b6b6;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px;
+}
+.card-servicios:hover {
+    transform: translateY(-5px); /* Mover hacia arriba al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-servicios a{
+    color: black;
+    text-decoration: none !important;
+}
+
+.padding-card-servicios{
+    padding: 20px;
+}
+
+.padding-card-servicios-2{
+    padding: 20px;
+}
+
+.card-servicios-grupo {
+    display: flex;
+    height: 100%;
+    flex-direction: column; /* Cambiado de 'content' a 'flex-direction' */
+    justify-content: space-around;
+}
+
+#boton-conocemos a{
+    border-color: white !important;
+}
+
+#boton-conocemos a:hover{
+    background-color: white !important;
+    color: black !important;
+}
+#enlace-centro-especializado a{
+    text-decoration: none !important;
+}
+/*----------------------------------------------------------------------------*/
+/* Pagina Externalizacion de montajes */
+/*----------------------------------------------------------------------------*/
+
+.card-servicios-una{
+    width: 370px !important;
+}
+
+@media (max-width: 768px){
+    .card-servicios-una{
+        width: 100% !important;
+    }
+}
+/*----------------------------------------------------------------------------*/
+/* Pagina Otros Servicios */
+/*----------------------------------------------------------------------------*/
